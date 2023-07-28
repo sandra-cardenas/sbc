@@ -14,16 +14,135 @@ nav  img {
     object-fit: cover;
 
   }
+
+  
 .navegador{
 
     width: auto;
     color: black;
      height: 85px;
     display: flex;
-    justify-content:space-around;
+    justify-content: center;
     background-color: #C1D0B5;
+    align-items: stretch;
    
 } 
+.navegador .fa-bars{
+    display: none;
+}
+
+@media(max-width:1326px){
+    
+    .sesion-compra{
+        margin: 0;
+    }
+    .buscador input{
+        margin: 0
+        ;
+    }
+    .slide{
+        margin: 0;
+    }
+    .logo h1{
+        font-size: 35px;
+        margin: 0;
+    }
+    nav ul li a i{
+        font-size: 10px;
+    }
+    nav  .buscador input{
+        width: 160px;
+    }
+    .navegador ul li a{
+        margin: 10px;
+        font-size: 20px;
+    }
+    .navegador ul li a:hover{
+        margin: 10px;
+        font-size: 20px;
+    }
+    .pie-pagina i{
+        font-size: 70px;
+     }
+    
+    .logo h1{
+        font-size: 20px;
+
+    }
+}
+   
+
+@media(max-width:992px){
+
+        .navegador .fa-bars{
+            display: flex;
+            margin: 0px;
+            color:rgb(0, 0, 0);
+            font-size: 40px;
+            align-items: center;
+            order: -1;
+            margin-right: 20px;
+            
+          
+        }
+     
+        
+        .navegador .fa-bars:hover + ul{
+            left: 0;
+        }
+      
+        .navegador ul{
+
+            position: fixed;
+            top:0;
+            left: -300px;
+            width: 250px;
+            height: 100vh;
+            background-color: rgb(5, 5, 5);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            transition: 0.5s;
+         
+        }
+     
+       
+    .navegador ul li a {
+        color: rgb(0, 0, 0);
+        
+    }
+    .navegador ul li a:hover{
+        color: rgba(0, 0, 0);
+    
+    }
+    main {
+        margin: 0 10px;
+    }
+    #carouselExampleAutoplaying{
+
+     margin-bottom: 0px;
+    }
+    .productos .producto{
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+    main div .productos{
+        margin: 5px;
+    }
+    footer ul li a {
+        font-size: 14px;
+      
+    }
+    .pie-pagina h4 {
+        font-size: 20px;
+    }
+
+ 
+       
+    }
+
+
+
 .menu{
     align-items: center;
   
@@ -31,6 +150,7 @@ nav  img {
     
 }
 .logo{
+    
     display: flex;
     font-family: 'Segoe UI'sans-serif;
     align-items: center;
@@ -90,6 +210,7 @@ nav li a {
     text-decoration: none;
     color: black;
     margin: 30px;
+    display: flex;
   
 }
 
@@ -103,6 +224,20 @@ ul {
     list-style: none;
 
 
+   
+}
+.slide {
+    margin-top: 10px;
+    
+
+}
+.slide img{
+    object-fit: cover;
+   
+}
+.carousel-item {
+width: auto;
+height: auto;
 }
 .titulo-producto{
 
@@ -202,7 +337,7 @@ article h2 {
 }
 
 .pie-pagina h4 {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .pie-pagina a {
@@ -216,9 +351,10 @@ article h2 {
 }
  .pie-pagina ul li a:hover{
     color: white;
+  
  }
- .pie-pagina i{
-    font-size: 50px;
+ .pie-pagina ul i{
+    font-size: 40px;
  }
 
 .inicio-sesion h2 {
@@ -272,19 +408,47 @@ article h2 {
  footer {
     width: 100%;
     color: black;
-     height: 250px;
+     height: 230px;
     display: flex;
-    justify-content: space-around;
+   
     background-color: #C1D0B5;
    font-size: 18px;
-   align-items: center;
+   align-items: space-between
+   ;
+   justify-content: center;
 
  }
-footer .redes ul li a i {
-    display: flex;
-    flex-direction: column;
-    
-   
+ footer .politica  h4{
+    font-size: 20px;
+
+ }
+ footer .s-cliente  h4{
+    font-size: 20px;
+
+ }
+ footer .mi-cuenta h4{
+    font-size: 20px;
+
+ }
+
+.pie-pagina{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+
+} 
+
+.redes ul{
+ display: grid;
+ grid-template-columns: repeat(3,1fr) ;
+ grid-auto-rows: 80px;
+ 
 }
+
+
+
   
 
