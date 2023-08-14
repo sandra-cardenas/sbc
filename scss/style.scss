@@ -1,0 +1,20 @@
+@import "variables";
+@import "navegador";
+@import "mixin";
+@import "mq";
+@import "carrousel";
+@import "productos";
+@import "nosotros";
+@import "btn-whatsapp";
+@import "pie-pagina";
+@import "inicio-sesion";
+@import "extend";
+@import "categorias";
+@import "mixin";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+ }

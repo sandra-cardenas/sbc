@@ -1,0 +1,13 @@
+@mixin boton ($bg,$width,$c-hover )
+{
+     margin: 10px ;
+     font-weight: bold;
+      background-color: $bg;
+      width:$width;
+      border-radius: $border;
+      &:hover{
+        color: $c-hover;
+      }
+ 
+    }
+

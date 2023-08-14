@@ -1,0 +1,107 @@
+.titulo-producto{
+
+    width: 100%;
+    h2{
+        @extend %h2;
+    }
+    }
+    .productos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+            
+    }
+        .producto{
+        width: 340px;
+        height: 330px;
+        margin: 30px ;
+        position: relative;
+        transition: 3s;
+        overflow: hidden;
+        border: lightgrey solid 1px;
+        border-radius: $border ;
+   
+        &::before{
+            content: "";
+             width: 600px;
+             height: 700px;
+             background-color:$color-primary ;
+             position: absolute;
+             opacity: 0.7;
+             top: -500px;
+             left: -800px;
+             transform: rotateZ( 45deg);
+             overflow: hidden;
+             transition: 2s;
+            
+              }
+                &:hover::before{
+               top: -300px;
+               left: -100px;
+            
+              }
+           
+        .info-producto{
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            left: 0;
+            color: white;
+            text-shadow: 2px 2px 2px #0e0e0e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            opacity: 0;
+            top: -25px;
+            font-size: auto;
+            &:hover{
+                top: 0;
+                opacity: 1;
+                transition: 0.5s;
+            }
+            h3, p{
+                font-size: 20px
+            }
+
+
+        }
+
+        h2{
+            @extend %h2;
+        }
+
+    
+           
+        img{
+         width: inherit;
+          height: inherit;
+          object-fit: cover;
+          border-radius: $border;
+          margin: auto;
+        
+            
+            }
+    
+        button{
+
+           
+            @include boton (#C1D0B5,200px,white);
+           
+           
+          
+         
+          
+        }
+    }
+    
+    main img {
+        width: 100%;
+    }
+   
+
+    
+    
+    

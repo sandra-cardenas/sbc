@@ -1,0 +1,27 @@
+.whatsapp {
+    position: fixed;
+    background-color:#00d221;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 20px;
+    right: 10px;
+    border-radius: 60%;
+    box-shadow: 5px 5px 15px 5px black;
+    &:hover{
+        bottom: 30px;
+        width: 85px;
+        height: 85px;
+        transition: 0.5s;
+    }
+    i{
+        font-size: 45px;
+        color: white;
+     
+    }
+    }
+    
+   
