@@ -1,7 +1,7 @@
 .navegador {
   width: auto;
   color: black;
-  height: 85px;
+  height: 150px;
   display: flex;
   justify-content: center;
   background-color: #C1D0B5;
@@ -244,8 +244,66 @@ article h2 {
     margin-bottom: 50px;
     padding: 5px;
   }
+  .categorias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .categorias .categoria {
+    width: 300px;
+    height: 200px !important;
+    margin: 10px;
+    position: relative;
+    transition: 3s;
+    overflow: hidden;
+    border: lightgrey solid 1px;
+    border-radius: 20px;
+  }
+  .categorias .categoria::before {
+    content: "";
+    width: 600px;
+    height: 700px;
+    background-color: #C1D0B5;
+    position: absolute;
+    opacity: 0.7;
+    top: -500px;
+    left: -800px;
+    transform: rotateZ(45deg);
+    overflow: hidden;
+    transition: 2s;
+  }
+  .categorias .categoria:hover::before {
+    top: -300px;
+    left: -100px;
+  }
+  .categorias .categoria .info-categoria {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px 2px #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    font-size: auto;
+  }
+  .categorias .categoria .info-categoria:hover {
+    top: 0;
+    opacity: 1;
+    transition: 0.5s;
+  }
+  .categorias .categoria .info-categoria:hover h3 {
+    font-size: 35px;
+    position: absolute;
+    top: 70px;
+    left: 170px;
+  }
 }
-@media (max-width: 600px) {
+@media (max-width: 720px) and (max-width: 600px) {
   #navegador .fa-bars {
     display: block;
     color: black;
@@ -280,14 +338,14 @@ article h2 {
     margin-right: 0px;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 720px) and (max-width: 520px) {
   .botones {
     width: 250px;
     display: flex;
     flex-direction: column;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 720px) and (max-width: 460px) {
   .navegador {
     width: 100vw;
   }
@@ -305,7 +363,7 @@ article h2 {
     margin-right: 0px;
   }
 }
-@media (max-width: 460px) and (max-width: 400px) {
+@media (max-width: 720px) and (max-width: 460px) and (max-width: 400px) {
   nav .buscador input {
     display: none;
   }
@@ -316,7 +374,9 @@ article h2 {
   }
 }
 .slide {
-  margin-top: 10px;
+  width: auto;
+  height: auto;
+  margin: 25px;
 }
 .slide img {
   object-fit: cover;
@@ -450,8 +510,8 @@ main img {
 }
 
 .nosotros .anuncio {
-  align-content: center;
-  justify-content: center;
+  align-content: start;
+  justify-content: start;
 }
 
 .nosotros img {
@@ -470,7 +530,10 @@ main img {
   margin: auto;
 }
 
-.direccion h2 {
+.direccion {
+  text-align: center;
+}
+.direccion .direccion h2 {
   font-size: 3vw;
   background-color: #C1D0B5;
   color: black;
@@ -478,7 +541,8 @@ main img {
 }
 
 iframe {
-  margin: 20px;
+  margin: 10px;
+  margin-right: 0px;
   width: 95%;
   align-content: center;
 }
@@ -518,6 +582,7 @@ footer {
   font-size: 18px;
   align-items: space-between;
   justify-content: center;
+  border: 2px rgb(255, 255, 255) solid;
 }
 footer .mi-cuenta h4 {
   font-size: 20px;
@@ -613,11 +678,78 @@ footer .s-cliente h4 {
   text-decoration: none;
 }
 
+.categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.categorias .categoria {
+  width: 1000px;
+  height: 500px;
+  margin: 50px;
+  position: relative;
+  transition: 3s;
+  overflow: hidden;
+  border: lightgrey solid 1px;
+  border-radius: 20px;
+}
+.categorias .categoria img {
+  width: 100%;
+}
+.categorias .categoria::before {
+  content: "";
+  width: 2000px;
+  height: 2000px;
+  background-color: lightgrey;
+  position: absolute;
+  opacity: 0.7;
+  top: -100px;
+  left: -2000px;
+  transform: rotateZ(45deg);
+  overflow: hidden;
+  transition: 2s;
+}
+.categorias .categoria:hover::before {
+  top: -200px;
+  left: -400px;
+}
+.categorias .categoria .info-categoria {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: -80px;
+  color: white;
+  text-shadow: 10px 10px 10px #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  top: -25px;
+  font-size: auto;
+}
+.categorias .categoria .info-categoria:hover {
+  top: 0;
+  opacity: 1;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.categorias .categoria .info-categoria h3 {
+  text-align: center;
+  font-size: 70px;
+}
+
+main img {
+  width: 100%;
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
