@@ -1,11 +1,38 @@
 @media(max-width:1326px)
 {
-   #nosotros {
+
+    #nosotros{
    
-     .anuncio{
+            display: flex !important;
+            flex-direction: column;
+            align-content: center;
+            position: relative;
+            
+            
+            .info-foto2{
+                display: flex;
+                justify-content: center;
+            }
+           .nosotros{
+
+        
+            p{
+                font-size: 20px;
+            }
+            img{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+            
+
+        }
+        
+       
+        
+    .anuncio{
         display: none;}
-     
-    }
     .sesion-compra{
         margin: 0;
     }
@@ -325,6 +352,24 @@
             width: 80px;
             margin-right: 0px;
         }
+          .p-productos {
+            .p-producto{
+            display: block;
+                width: 180px;
+                margin: 10px;
+                gap: 5px;
+          
+                .info-p-producto{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 5px;
+                
+                }
+                
+            }
+        }
+        }
        
         @media(max-width:400px){
           
@@ -342,4 +387,4 @@
            
         }
     
-    }
+    

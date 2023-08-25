@@ -15,7 +15,7 @@
         height: 500px;
         margin: 50px ;
         position: relative;
-        transition: 3s;
+        transition: 5s;
         overflow: hidden;
         border: lightgrey solid 1px;
         border-radius: $border ;
@@ -34,7 +34,7 @@
             left: -2000px;
             transform: rotateZ( 45deg);
             overflow: hidden;
-            transition: 2s;
+            transition: 5s;
            
             
               }
@@ -74,6 +74,4 @@
  
       }
 
-      main img {
-        width: 100%;
-    }
+      
