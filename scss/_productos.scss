@@ -1,10 +1,12 @@
+/* TITULO DE LA PAGINA PRODUCTOS*/
 .titulo-producto{
 
     width: 100%;
     h2{
-        @extend %h2;
+        @extend %h1;
     }
     }
+    /* CONTENIDO DE LA PAGINA PRODUCTOS*/
     .productos{
         display: flex;
         justify-content: center;
@@ -12,6 +14,7 @@
         align-items: center;
             
     }
+    /* INFORMACION DE CADA PRODUCTO INCLUYE TITULO, IMAGEN, INFORMACION*/
         .producto{
         width: 340px;
         height: 330px;
@@ -69,8 +72,8 @@
 
         }
 
-        h2{
-            @extend %h2;
+        h1{
+            @extend %h1;
         }
 
     

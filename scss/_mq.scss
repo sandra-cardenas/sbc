@@ -1,9 +1,10 @@
+/* MEDIDAS SEGUN MAX-WIDTH----------------- 1236PX----------*/
 @media(max-width:1326px)
 {
 
     #nosotros{
    
-            display: flex !important;
+            display: flex ;
             flex-direction: column;
             align-content: center;
             position: relative;
@@ -70,7 +71,7 @@
     
   
 }
-   
+   /* MEDIDAS SEGUN MAX-WIDTH----------------- 992PX----------*/
 
 @media(max-width:992px){
  
@@ -177,7 +178,7 @@
     }
 
 }
-      
+      /* MEDIDAS SEGUN MAX-WIDTH----------------- 720PX----------*/
     @media(max-width:720px){
         
 
@@ -277,7 +278,7 @@
               }
         }
       }
-    
+    /* MEDIDAS SEGUN MAX-WIDTH----------------- 600PX----------*/
 
     @media(max-width:600px){
         #navegador .fa-bars{
@@ -319,6 +320,7 @@
       
 
     }
+    /* MEDIDAS SEGUN MAX-WIDTH----------------- 520PX----------*/
     @media(max-width:520px){
          .botones{
             width: 250px;
@@ -370,7 +372,7 @@
             }
         }
         }
-       
+       /* MEDIDAS SEGUN MAX-WIDTH----------------- 400PX----------*/
         @media(max-width:400px){
           
     

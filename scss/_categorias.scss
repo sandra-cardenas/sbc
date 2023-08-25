@@ -1,7 +1,10 @@
-.cont-categorias h2{
+/* TITULO DE CATEGORIAS*/
+.cont-categorias h1{
 
-    @extend %h2;
+    @extend %h1;
 }
+
+/* CONTENIDO PAGINA CATEGORIAS*/
 .categorias{
     display: flex;
     justify-content: center;

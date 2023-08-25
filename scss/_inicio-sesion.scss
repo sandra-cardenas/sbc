@@ -1,12 +1,12 @@
-
+/* PAGINA DE INICIAR SESION*/
 .inicio-sesion{
     
 
     display: flex; 
     flex-direction: column;
  
-    h2 {
-        @extend %h2
+    h1 {
+        @extend %h1
        }
        img{
 
@@ -21,6 +21,7 @@
      }
     
  }
+ /* FORMULARIO DE PAGINA INICIO DE SESION*/
 
 .formulario{
     display: flex;
@@ -30,6 +31,10 @@
     gap: 20px;
     text-align: center;
     justify-content: center;
+    input{
+      border: 1px solid;  
+      
+    }
 
    
    
