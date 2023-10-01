@@ -23,15 +23,12 @@ if ( mailIngresado ==MAIL && passwordIngresado ==PASSWORD){
 let addProducto1 = prompt("¿Desea añadir al carrito el producto Nº 1 ?\nResponde SI o NO");
 if ( addProducto1.trim().toUpperCase() == "SI" ){
     cantidadProducto1= parseInt(prompt("Ingrese la cantidad que requiere del Producto Nº 1 "));
- 
-  if (validarNaN(cantidadProducto1)) {
-    alert (" Se adicionó al carrito "+ cantidadProducto1 + " unidad(es) del producto Nº 1");
-  }
       while (validarNaN(cantidadProducto1)){
-                      alert( "No añadiste ningún producto Nº 1 al carrito") 
-        cantidadProducto1= parseInt(prompt("Ingrese la cantidad que requiere del Producto Nº 1 "));
-     }  
-        }
+      alert( "No añadiste ningún producto Nº 1 al carrito") 
+      cantidadProducto1= parseInt(prompt("Ingrese la cantidad que requiere del Producto Nº 1 "));
+       } 
+ alert (" Se adicionó al carrito "+ cantidadProducto1 + " unidad(es) del producto Nº 1");
+  }
      else{
         alert( "No añadiste ningún producto Nº 1 al carrito");
     } 
@@ -39,35 +36,30 @@ if ( addProducto1.trim().toUpperCase() == "SI" ){
 let addProducto2 = prompt("¿Desea añadir al carrito el producto Nº 2 ?\nResponde SI o NO");
 if ( addProducto2.trim().toUpperCase() == "SI" ){
     cantidadProducto2= parseInt(prompt("Ingrese la cantidad que requiere del Producto Nº 2 "));
- 
-  if (validarNaN(cantidadProducto2)) {
-    alert (" Se adicionó al carrito "+ cantidadProducto2 + " unidad(es) del producto Nº 2");
-  }
       while (validarNaN(cantidadProducto2)){
-                      alert( "No añadiste ningún producto Nº 2 al carrito") 
-        cantidadProducto2= parseInt(prompt("Ingrese la cantidad que requiere del Producto Nº 2 "));
-     }  
-        }
+      alert( "No añadiste ningún producto Nº 2 al carrito") 
+      cantidadProducto2= parseInt(prompt("Ingrese la cantidad que requiere del Producto Nº 2 "));
+       } 
+ alert (" Se adicionó al carrito "+ cantidadProducto2 + " unidad(es) del producto Nº 2");
+  }
      else{
         alert( "No añadiste ningún producto Nº 2 al carrito");
     } 
     // AÑADIR CANTIDAD DEL PRODUCTO Nº 3
     let addProducto3 = prompt("¿Desea añadir al carrito el producto Nº 3 ?\nResponde SI o NO");
-    if ( addProducto3.trim().toUpperCase() == "SI" ){
-        cantidadProducto3= parseInt(prompt("Ingrese la cantidad que requiere del Producto Nº 3 "));
-     
-      if (validarNaN(cantidadProducto3)) {
-        alert (" Se adicionó al carrito "+ cantidadProducto3 + " unidad(es) del producto Nº 3");
-      }
-          while (validarNaN(cantidadProducto3)){
-                          alert( "No añadiste ningún producto Nº 3 al carrito") 
-            cantidadProducto3= parseInt(prompt("Ingrese la cantidad que requiere del Producto Nº 3 "));
-         }  
-            }
-         else{
-            alert( "No añadiste ningún producto Nº 3 al carrito");
-        } 
-//SUMAR CANTIDADES DE LA COMPRA
+if ( addProducto3.trim().toUpperCase() == "SI" ){
+    cantidadProducto3= parseInt(prompt("Ingrese la cantidad que requiere del Producto Nº 3 "));
+      while (validarNaN(cantidadProducto3)){
+      alert( "No añadiste ningún producto Nº 2 al carrito") 
+      cantidadProducto3= parseInt(prompt("Ingrese la cantidad que requiere del Producto Nº 3 "));
+       } 
+ alert (" Se adicionó al carrito "+ cantidadProducto3 + " unidad(es) del producto Nº 3");
+  }
+     else{
+        alert( "No añadiste ningún producto Nº 3 al carrito");
+    } 
+                  
+//SUMAR CANTIDADES DEL CARRITO DE COMPRA
     let cantidadTotal= cantidadProducto1+cantidadProducto2+cantidadProducto3 ;
     cantidadTotal=alert("Tienes un total de: " + cantidadTotal + " producto(s) agregados al carrito \nCantidad del producto Nº 1: " + cantidadProducto1 + " producto(s)\nCantidad del producto Nº 2: "+ cantidadProducto2+ " producto(s)\nCantidad del producto Nº 3: "+ cantidadProducto3 +" producto(s)");
 }
