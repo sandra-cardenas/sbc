@@ -1,5 +1,3 @@
-const MAIL = "user1@gmail.com"
-const PASSWORD = "1234"
 let mailIngresado = prompt( " Ingrese su correo: ");
 let passwordIngresado =prompt(" Ingrese su contraseña: ");
 let cantidadProducto1 = 0;
@@ -7,16 +5,17 @@ let cantidadProducto2 = 0;
 let cantidadProducto3 = 0;
 //FUNCION PARA DAR LA BIENVENIDA
 function darBienvenida(){
-    alert( "Bienvenido(a), puede proceder con su compra.");
+    alert( "Bienvenido(a), "+ usuario1.obtenerNombreCompleto ()+ " puede proceder con su compra.");
 
 }
-//FUNCION PARA QUE SEA UN NUMERO LA CANTIDAD INGRESADA
+//FUNCION PARA QUE SEA UN NUMERO Y MAYOR DE CERO 
 const validarNaN = (cantidadProductoX)=>{
   if (isNaN(cantidadProductoX)|| cantidadProductoX<=0) {
     return true;
 }
 }
-if ( mailIngresado ==MAIL && passwordIngresado ==PASSWORD){
+console.log(usuario1)
+if ( mailIngresado ==usuario1.email && passwordIngresado ==usuario1.contrasenia){
     darBienvenida()
 
 // AÑADIR CANTIDAD DEL PRODUCTO Nº 1
@@ -58,7 +57,7 @@ if ( addProducto3.trim().toUpperCase() == "SI" ){
      else{
         alert( "No añadiste ningún producto Nº 3 al carrito");
     } 
-                  
+
 //SUMAR CANTIDADES DEL CARRITO DE COMPRA
     let cantidadTotal= cantidadProducto1+cantidadProducto2+cantidadProducto3 ;
     cantidadTotal=alert("Tienes un total de: " + cantidadTotal + " producto(s) agregados al carrito \nCantidad del producto Nº 1: " + cantidadProducto1 + " producto(s)\nCantidad del producto Nº 2: "+ cantidadProducto2+ " producto(s)\nCantidad del producto Nº 3: "+ cantidadProducto3 +" producto(s)");
