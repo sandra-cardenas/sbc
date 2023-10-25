@@ -742,6 +742,7 @@ footer .s-cliente h4 {
 }
 .formulario input {
   border: 1px solid;
+  border-radius: 5px;
 }
 
 .botones {

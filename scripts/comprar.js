@@ -1,20 +1,5 @@
-productosMock.forEach((unProducto)=>{
-    console.table(unProducto);
-})
-let mailIngresado = prompt( " Ingrese su correo: ");
-let passwordIngresado =prompt(" Ingrese su contraseña: ");
-//MUESTRA EN LA CONSOLA LA LISTA TOTAL DE PRODUCTOS
-let cantidadProducto1 = 0;
-let cantidadProducto2 = 0;
-let cantidadProducto3 = 0;
-let cantidadProducto4 = 0;
-let cantidadProducto5 = 0;
-//FUNCION PARA DAR LA BIENVENIDA
-function darBienvenida(){
-    alert( "Bienvenido(a), "+ usuario1.obtenerNombreCompleto ()+ " puede proceder con su compra.");
-}
 //FUNCION PARA QUE SEA UN NUMERO Y MAYOR DE CERO 
-const validarNaN = (cantidadProductoX)=>{
+/*const validarNaN = (cantidadProductoX)=>{
   if (isNaN(cantidadProductoX)|| cantidadProductoX<=0) {
     return true;
 }}
@@ -108,4 +93,5 @@ if ( addProducto.trim().toUpperCase() == "SI" ){
 }
 else{
     alert("El usuario y/o contraseña no son correctos \nLo invitamos a registrarse para proceder con su compra");
-}
+}*/
+
