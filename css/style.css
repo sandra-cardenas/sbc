@@ -902,3 +902,6 @@ footer .s-cliente h4 {
 .shopping-cart-total {
   min-height: 96px;
 }
+.btn-secondary {
+  color: #C1D0B5;
+}

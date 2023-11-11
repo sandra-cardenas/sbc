@@ -1,4 +1,5 @@
 //PRODUCTOS OBTENIDOS DE PRODUCTOS.JSON
+
 const main = document.querySelector("div.p-productos")
 async function getData(){
     const res = await fetch("/mocks/productos.json")
@@ -23,6 +24,7 @@ async function getData(){
    precio.textContent= "S/."+p.precio +".00"
 
     const boton = document.createElement("button")
+
     boton.className= "addToCart"
     boton.textContent = "AÑADIR AL CARRITO"
     
@@ -31,6 +33,8 @@ async function getData(){
     main.append(card)
        
     })
+
+    //
     const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
     addToShoppingCartButtons.forEach((addToCartButton) => {
       addToCartButton.addEventListener('click', addToCartClicked);
@@ -38,23 +42,17 @@ async function getData(){
     const comprarButton = document.querySelector('.comprarButton');
    comprarButton.addEventListener('click', comprarButtonClicked);
     const shoppingCartItemsContainer =document.querySelector('.shoppingCartItemsContainer')
-
+    //FUNCION PARA QUE AL MOMENTO DE DAR CLICK SE ADICIONE TITULO, PRECIO E IMAGEN
     function addToCartClicked(event) { 
         const button = event.target;
-
        const item = button.closest('.p-producto')
-
-
        const itemTitle =item.querySelector("h3").textContent;
        const itemPrice = item.querySelector(".precio").textContent;
        const itemImage = item.querySelector("img").src
-
-       
+   
       addItemToShoppingCart( itemTitle, itemPrice, itemImage);
-
-
     }
-
+     //FUNCION PARA QUE NO SE REPITA LOS PRODUCTOS Y SOLO SE SUMEN SI YA ESTAN AÑADIDOS AL CARRITO
     function addItemToShoppingCart (itemTitle, itemPrice, itemImage){
       const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(
         'shoppingCartItemTitle'
@@ -72,7 +70,7 @@ async function getData(){
           return;
         }
       }
-    
+    //CREAR LOS ELEMENTOS AÑADIDOS AL CARRITO
      const shoppingCartRow = document.createElement('div')
      const shoppingCartContent = `
      <div class="row shoppingCartItem">
@@ -116,6 +114,7 @@ async function getData(){
     updateShoppingCartTotal()
 
     }
+    //CALCULAR EL TOTAL EN SOLES (MONEDA PERUANA)DE LOS PRODUCTOS AÑADIDOS AL CARRITO
     function updateShoppingCartTotal() {
       let total = 0;
       const shoppingCartTotal = document.querySelector('.shoppingCartTotal');
@@ -139,11 +138,13 @@ async function getData(){
       });
       shoppingCartTotal.innerHTML = `S/.${total.toFixed(2)}`;
     }
+    // PARA ELIMINAR PRODUCTOS DEL CARRITO
     function removeShoppingCartItem(event) {
       const buttonClicked = event.target;
       buttonClicked.closest('.shoppingCartItem').remove();
       updateShoppingCartTotal();
     }
+    // FUNCION PARA QUE EL CONTADOR NO SEA MENOR A 1
     function quantityChanged(event) {
       const input = event.target;
       input.value <= 0 ? (input.value = 1) : null;
@@ -152,24 +153,7 @@ async function getData(){
     function comprarButtonClicked() {
       shoppingCartItemsContainer.innerHTML = '';
       updateShoppingCartTotal();
-    }
-    
-    
-
-
-    
-    
-        
-    
-    
-    
-    
-        
-    
-    
-    
-                             
-
+    }                
      }
     
 
