@@ -16,9 +16,13 @@ const FORMULARIOREGISTRAR = document.getElementById("registroDeUsuarioForm");
 if (registrarUsuario(nombres, apellidoP,apellidoM,dni,correo,password,repetirPassword
 )) {
     FORMULARIOREGISTRAR.reset();
-    alert("El usuario se registró satisfactoriamente")
+     Swal.fire({
+     icon: "success",
+     text: "El usuario se registró satisfactoriamente",
+       });
+
       } else{
-        alert("Verificar el ingreso de los datos")
+       // alert("Verificar el ingreso de los datos")
       }
       }); 
       const CARACTERESMINIMOS = 8;
@@ -34,42 +38,73 @@ if (registrarUsuario(nombres, apellidoP,apellidoM,dni,correo,password,repetirPas
 ) =>{
 //COMPRUEBA QUE LOS INPUTS NO ESTEN VACIOS
      if (nombres.length== 0){
-     alert( "No completaste tus Nombres para el registro");
-     return false
+        Swal.fire({
+            icon: "warning",
+            text: "No completaste tus Nombres para el registro",
+              });
+      return false
      }
      if (apellidoP.length== 0){
-         alert( "No completaste tu Apellido Paterno para el registro");
+        Swal.fire({
+            icon: "warning",
+            text: "No completaste tu Apellido Paterno para el registro",
+              });
+        
          return false
      }
      if (apellidoM.length== 0){
-         alert( "No completaste tu Apellido Materno para el registro");
+        Swal.fire({
+            icon: "warning",
+            text: "No completaste tu Apellido Materno para el registro",
+              });
+                
          return false
      }
      if (dni.length== 0){
-         alert( "No completaste tu DNI para el registro");
+        Swal.fire({
+            icon: "warning",
+            text: "No completaste tu DNI para el registro",
+              });
          return false  
      }
      if (correo.length== 0){
-         alert( "No completaste tu correo para el registro");
+        Swal.fire({
+            icon: "warning",
+            text: "No completaste tu correo para el registro",
+              });
          return false
      }
      if (password.length== 0){
-         alert( "No completaste tu contraseña para el registro");
+        Swal.fire({
+            icon: "warning",
+            text: "No completaste tu contraseña para el registro",
+              });
+        
          return false
      }
      //LA CONTRASEÑA NO DEBE TENER MENOS DE 8 CARACTERES
      if (password.length< CARACTERESMINIMOS) {
-         alert ("La contraseña debe tener como minimo"+ CARACTERESMINIMOS+ "caracteres");
+        Swal.fire({
+            icon: "warning",
+            text: "La contraseña debe tener como minimo "+ CARACTERESMINIMOS+ " caracteres",
+              });
          return false
          
      }
      if (repetirPassword.length== 0){
-         alert( "El campo repetir contraseña debe ser completado")
+        Swal.fire({
+            icon: "warning",
+            text: "El campo repetir contraseña debe ser completado",
+              });
+        
          return false
      }
      // PARA COMPROBAR QUE SE INGRESE LA MISMA CONTRASEÑA
      if (password != repetirPassword) {
-         alert ("Las contraseñas deben ser las mismas")
+        Swal.fire({
+            icon: "warning",
+            text: "Las contraseñas deben ser las mismas",
+              });
          return false
      }
      return true;
@@ -99,7 +134,12 @@ if (registrarUsuario(nombres, apellidoP,apellidoM,dni,correo,password,repetirPas
         }
         //VERIFICAR QUE NO HAYA DUPLICADO DE CORREOS
         if (CORREOREGISTRADO(usuarios,correo)) {
-            alert("El correo ingresado ya se encuentra registrado")
+
+            Swal.fire({
+                icon: "warning",
+                text: "El correo ingresado ya se encuentra registrado",
+                  });
+
             return false;
         }
         //GUARDA LOS DATOS INGRESADOS PARA LA CREACION DE UN NUEVO USUARIO

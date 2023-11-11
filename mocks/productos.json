@@ -1,0 +1,140 @@
+ [
+{
+    "nombre": "Arete Mariposa",
+    "descripcion":"Elegante arete en forma de mariposa, trabajado en filigrana con baño de oro. Los colores y formas de los pendientes pueden variar. Viene en un hermoso empaque de regalo, tarjeta con dedicatoria y tips para conservar su accesorio.",
+    "precio": 100,
+    "id": "Producto 1",
+    "tipo": "Arete",
+    "material": "Oro",
+    "garantia": "12 meses",
+    "imagen":"../multimedia/imagenes/productos/arete-mariposa.jpg"
+    
+},
+{
+    "nombre":"Collar Arcoiris",
+    "descripcion":"El collar arcoíris está confeccionado con tiras de piedras de strass en superpuestas en distintos colores: violeta, azul, esmeralda, topacio, rojo. Inspirado en la magia de los reflejos selváticos de las cascadas",
+     "precio": 60,
+    "id": "Producto 2",
+    "tipo":"Collar",
+    "material": "Acero Inox",
+    "garantia": "12 meses",
+     "imagen":"../multimedia/imagenes/productos/gargantilla-colores.jpg"
+   
+},
+{
+    "nombre": "Anillo varón",
+    "descripcion": "Este anillo es extremadamente duradero y resistente, lo que le permite usarlo durante mucho tiempo, de material acero inoxidable, lo tenemos disponible en color negro. El Modelo puede salir sin diseño y con diseño del anime Attack on Titan.",
+    "precio": 60,
+    "id": "Producto 3",
+    "tipo": "Anillo" ,
+    "material": "Acero Inox"  ,
+    "garantia": "06 meses"  ,
+    "imagen": "../multimedia/imagenes/productos/anillo-varon.jpg"  
+    
+},{
+    "nombre": "Collar Perla",
+    "descripcion": " Collar de perlas cultivadas de color blanco, de tamaño medio, que culmina con una mariposa de oro amarillo de 18kt con circonitas adornando sus alas. La pieza destaca por su elegancia y luminosidad, siendo un gran regalo para esa persona tan especial.",
+    "precio": 120,
+    "id":"Producto 4" ,
+    "tipo": "Collar" ,
+    "material": "Oro" ,
+    "garantia": "12 meses" ,
+    "imagen": "../multimedia/imagenes/productos/collar-perla.jpg"
+    
+},{
+    "nombre":"Collar Variado" ,
+    "descripcion":"Muestra tu amor por mamá con este hermoso diseño que simboliza la conexión entre madre e hija. Esta elegante pieza está diseñada para brillar y hacer que mamá se  sienta como la reina que realmente es. Happy Mother's Day." ,
+    "precio": 80,
+    "id": "Producto 5",
+    "tipo": "Collar" ,
+    "material": "Acero Inox" ,
+    "garantia":"06 meses"  ,
+    "imagen": "../multimedia/imagenes/productos/collar-variado.jpg"
+    },
+    {
+        "nombre": "Gargantilla corazón" ,
+        "descripcion":" Este collar es el regalo perfecto para esa persona especial en tu vida. El corazón de circonitas es símbolo del amor eterno, e ilumina el aro central en el que está fijado. Una pieza elaborada a mano por los joyeros de SATURNO.",
+        "precio": 80,
+        "id":"Producto 6" ,
+        "tipo": "Collar" ,
+        "material": "Oro"  ,
+        "garantia":"12 meses"  ,
+        "imagen": "../multimedia/imagenes/productos/gargantilla-corazon.jpg" 
+            
+    },{
+        "nombre": "Collar Estrella",
+        "descripcion":"Una joya celestial que nos recuerda seguir nuestro camino y metas en la vida. Es un símbolo de amor eterno y guía, como la Estrella Polar que nos muestra el norte. Llevarlocerca de nuestro corazón nos conecta con esa luz especial que nos ilumina " ,
+       "precio":"55" ,
+        "id": "Producto 7",
+        "tipo": "Collar" ,
+        "material": "Acero Inox" ,
+        "garantia": "06 meses" ,
+        "imagen":"../multimedia/imagenes/productos/collar-estrella.jpg" 
+        
+    },
+    {
+        "nombre":"Tobillera",
+        "descripcion" : "Las pulseras tobilleras se asocian con la feminidad y sobretodo con la sensualidad. Es un complemento perfecto que ayuda a acentuar la curvatura del tobillo y además lo estiliza.",
+       "precio": 85 ,
+        "id": "Producto 8" ,
+        "tipo": "Tobillera" ,
+        "material": "Acero Inox" ,
+        "garantia": "04 meses" ,
+        "imagen": "../multimedia/imagenes/productos/tobillera.jpg"        
+    
+    }
+    ,{ 
+        "nombre": "Gargantilla Mariposa" ,
+        "descripcion": "Este delicado collar de mariposa hecho de latón no se despinta ni se oxida, estos collares son hipoalergénicos, sin níquel y sin plomo; seguro para la piel, nunca tendrás que preocuparte de que tu piel se ponga verde.",
+       "precio": 100,
+        "id": "Producto 9",
+        "tipo": "Collar" ,
+        "material": "Acero Inox"  ,
+        "garantia": "04 meses" ,
+        "imagen":"../multimedia/imagenes/productos/gargantilla-mariposa.jpg"
+        
+    },
+    {
+        "nombre": "Collar Serpiente" ,
+        "descripcion":"Collar con un diseño hermoso de serpiente con un detalle de piedras preciosas, perfectos para tu outfit del fiesta" ,
+       "precio": 75 ,
+        "id": "Producto 10" ,
+        "tipo": "Collar"  ,
+        "material": "Acero Inox" ,
+        "garantia": "06 meses" ,
+        "imagen":"../multimedia/imagenes/productos/collar-serpiente.jpg"
+        
+    }
+
+                        
+
+ ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

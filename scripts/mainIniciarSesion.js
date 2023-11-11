@@ -10,40 +10,66 @@ let correo = document.getElementById("correoLogin").value;
 let password = document.getElementById("contraseñaLogin").value;
 // PARA QUE LOS INPUTS SEAN COMPLETADOS EN EL FORMULARIO
 if (!validarForm(correo,password)) {
-    alert ("Ingresa los campos requeridos para iniciar sesión")
-    return false
+                   
+      return false
 }
 // SE VALIDA SI EL CORREO EXISTE O NO
 const unUsuario =conseguirCorreo(usuarios,correo);
 console.log("correo recuperado",unUsuario);
 if (!unUsuario) {
-alert("El correo ingresado no esta registrado\nLo invitamos a registrarse para proceder con su compra");
+    Swal.fire({
+        icon: "error",
+        title: "ERROR AL INICIAR SESIÓN",
+        text: " El correo ingresado no esta registrado.\nLo invitamos a registrarse para proceder con su compra",
+          });
     return false;
 }
 // SE CONSIGUE QUE LA CONTRASEÑA SEA IGUAL A LA DEL CORREO INGRESADO
 if (!unUsuario.miPassword (password)) {
-    alert("La contraseña ingresada no es correcta");
+    Swal.fire({
+        icon: "error",
+        title: "ERROR AL INICIAR SESIÓN",
+        text: " La contraseña ingresada no es correcta",
+          });
         return false;
     }
 // BIENVENIDA DE INICIO DE SESION
     registrarInicioSesion(unUsuario);
-   unUsuario.inicioSesion = true;
-    window.location = "productos.html"
-    function darBienvenida(){
-        alert( "Bienvenido(a), \n"+ unUsuario.obtenerNombreCompleto ()+ " puede proceder con su compra.");
-    }
-    darBienvenida()
+   // window.location = "productos.html"
+    unUsuario.inicioSesion = true;
 
-      }); 
+    if ( unUsuario.inicioSesion = true) {
+      
+        Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Bienvenido(a), \n"+ unUsuario.obtenerNombreCompleto ()+ " puedes dirigirte a la página de PRODUCTOS para proceder con tu compra.",
+            showConfirmButton: false,
+            allowOutsideClick: false,
+            html:`<a href="./productos.html">PRODUCTOS</a>`
+          });
+          FORMULARIOINICIOSESION.reset();     
+    }
+    
+      });  
 
 //VALIDA QUE SE INGRESEN DATOS A LOS INPUTS
 const validarForm =(correo,password)=>{
    if (correo.length ==0) {
-    alert("Ingresa tu correo electronico")
+    Swal.fire({
+        icon: "warning",
+        title: "RECUERDA...",
+        text: " Debes ingresar tu correo electronico para iniciar sesión",
+          });
     return false
            }
    if (password.length==0) {
-    alert("Ingresa tu contraseña")
+    Swal.fire({
+        icon: "warning",
+        
+        title: "RECUERDA...",
+        text: " Debes ingresar tu contraseña para iniciar sesión",
+          });
     return false
    }
 return true

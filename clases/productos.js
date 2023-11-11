@@ -1,11 +1,12 @@
 class producto{
-    constructor( id,tipo, nombre,material , precio,garantia) {
+    constructor( nombre,descripcion,precio,id, tipo,material ,garantia) {
+    this.nombre= nombre;
+    this.descripcion = descripcion;
+    this.precio= precio;
     this.id= id;
     this.tipo = tipo;
-    this.nombre= nombre;
-    this.material=material;
-    this.precio= precio;
-    this.garantia= garantia;
+       this.material=material;
+      this.garantia= garantia;
     }
    toString = ()=>{
         return this.id +" "+ this.nombre
